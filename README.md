@@ -8,6 +8,7 @@
       with:
         value: ${{ github.ref }}
         regex: ".*/"
+        flags: ""
         replacement: ""
     - name: branch
       run: echo "${{ steps.branch.outputs.value }}"
